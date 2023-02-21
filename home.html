@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale = 1.0">
+
+    <title>Little Lemon Restaurant</title>
+    <meta name = "description" content="A brief description">
+    <meta name = "author" content="Little Lemon Restaurant">
+    
+    <link rel="stylesheet" href="homecss.css">
+
+    <link rel = "preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="Assets/Asset 16@4x.png" width="40%">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="bookseat.html">Book</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!--1st Section-->
+        <section>
+        <div id="lemon">
+            <article>
+                <h1>25% Off this Weekend</h1>
+                <h3>Little Lemon Restaurant offers the finest Italian and American cuisine in the town. Come and Enjoy the 25% off this weekend in the restaurant.</h3>
+                <p>
+
+                </p>
+            </article>
+        </div>
+        </section>
+        <!--2nd Section-->
+        <section>
+            <!--2nd Article-->
+            <article>
+            <h2>Book a table</h2>
+            <img src="Assets/ss.jpeg" width="100%" id="photos">
+            <p>
+                Book your table and choose your sitting location as well.
+            </p>
+            <form method="POST">
+                <div>
+                  <label for="booking_date"><b>Booking Date</b></label>
+                  <input type="date" id="booking_date" name = "booking_date">
+                </div>
+                <div>
+                  <label for="booking_people"><b>Number of Peoples</b></label>
+                  <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value = this.value">
+                  <output>4</output>
+                </div>
+                <div>
+                  <label for="booking_loaction"><b>Location</b></label>
+                  <input id="booking_location" name="booking_location" list="locations">
+                  <datalist id="locations">
+                    <option value="Outside"></option>
+                    <option value="Inside"></option>
+                  </datalist>
+                </div>
+                <button type="submit"><b>Book Table</b></button>
+              </form>
+            <a href="" target="_blank"></a>
+            </article>
+            <!--3rd Article-->
+            <article>
+                <div>
+                    <h2>Our New Menu</h2>
+                    <img src="Assets/download.jpeg" width="100%" id="photos">
+                    <p>
+                        Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
+                        We've updated our menu with new dinners.
+                    </p>
+                    <a href="Menu.html" target="_blank">See Our Menu</a>
+                </div>
+            </article>
+        
+            <article>
+                <div>
+                    <h2>Opening Hours</h2>
+                    <img src="Assets/chef.jpeg" width="100%" id="photos">
+                    <p>
+                        The timings of Opening of restaurant is given below. We also have a site to book your seat from your home. 
+                    </p>
+                    <ul>
+                        <li><b>Mon - Fri:</b> 12pm - 10pm</li>
+                        <li><b>Sat:</b> 11am - 11pm</li>
+                        <li><b>Sun:</b> 11am - 10pm</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <img src="Assets/Asset 9@4x.png" width="10%">
+        </div>
+        <div>
+            <p>Copyright Little Lemon</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
